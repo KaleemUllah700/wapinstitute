@@ -62,6 +62,52 @@ const socials = [
     }
 ]
 
+const youtubes = [
+    {
+        label: 'Python tutorial for beginners in hindi',
+        link: ''
+    },
+    {
+        label: 'Host Php Mysql website on Aws Cloud Ec2 in hindi',
+        link: ''
+    },
+    {
+        label: 'Can i get jobs after reading c and c++',
+        link: ''
+    },
+    {
+        label: 'Software developer salary salary of a programmer',
+        link: ''
+    },
+    {
+        label: 'How to copy windows in pendrive',
+        link: ''
+    }
+]
+
+const devtools = [
+    {
+        label: 'Hosting checker',
+        link: ''
+    },
+    {
+        label: 'Dns checker',
+        link: ''
+    },
+    {
+        label: 'Stackoverflow',
+        link: ''
+    },
+    {
+        label: 'Secret key generator',
+        link: ''
+    },
+    {
+        label: 'Coding solutions',
+        link: ''
+    }
+]
+
     return(
         <div>
             <header className="flex justify-between px-8 py-2 text-sm shadow">
@@ -104,7 +150,7 @@ const socials = [
             <section></section>
             <footer>
                 <div className='grid grid-cols-4 bg-[white] mx-8 px-4'>
-                    <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-4 p-4'>
                         <Logo />
                         <div className='flex items-center gap-4'>
                             <button className='w-[40px] h-[40px] bg-[#F7E8F6] rounded-full text-lg'>
@@ -122,9 +168,30 @@ const socials = [
                             }
                         </div>
                     </div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
+                    <div className='flex flex-col gap-2 p-4'>
+                        <h1 className='text-lg font-semibold'>Navlinks</h1>
+                        {
+                            menus.map((menu, index)=>(
+                                    <Link to={menu.path} key={index}>{menu.label}</Link>
+                            ))
+                        }
+                    </div>
+                    <div className='flex flex-col gap-2 p-4'>
+                    <h1 className='text-lg font-semibold'>YouTube videos</h1>
+                        {
+                            youtubes.map((youtube, index)=>(
+                                <Link to={youtube.link} key={index}>{youtube.label}</Link>
+                            ))
+                        }
+                    </div>
+                    <div className='flex flex-col gap-2 p-4'>
+                        <h1 className='text-lg font-semibold'>Devtools</h1>
+                        {
+                            devtools.map((devtool, index)=>(
+                                <Link to={devtool.link} key={index}>{devtool.label}</Link>
+                            ))
+                        }
+                    </div>
                 </div>
             </footer>
         </div>
