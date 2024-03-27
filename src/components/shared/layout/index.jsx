@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import Logo from '../logo'
 
-const Layout = ()=>{
+const Layout = ({children})=>{
 
 const verifications = [
     {
@@ -108,6 +108,21 @@ const devtools = [
     }
 ]
 
+const privacies = [
+    {
+        label: 'Privacy',
+        link: '/privacy'
+    },
+    {
+        label: 'Terms',
+        link: '/terms'
+    },
+    {
+        label: 'Refund Policy',
+        link: '/refund-policy'
+    }
+]
+
     return(
         <div>
             <header className="flex justify-between px-8 py-2 text-sm shadow">
@@ -147,7 +162,11 @@ const devtools = [
                     }
                 </ul>
             </nav>
-            <section></section>
+            <section className='mx-8 bg-[red]'>
+                {
+                    children
+                }
+            </section>
             <footer>
                 <div className='grid grid-cols-4 bg-[white] mx-8 px-4'>
                     <div className='flex flex-col gap-4 p-4'>
@@ -191,6 +210,19 @@ const devtools = [
                                 <Link to={devtool.link} key={index}>{devtool.label}</Link>
                             ))
                         }
+                    </div>
+                </div>
+                <div className='flex justify-between mx-8 text-sm font-semibold'>
+                    <div>
+                        <i className='fa fa-home'></i>
+                        <span>Nodewap It Solutions | All Right Reserved</span>
+                    </div>
+                    <div className='flex gap-4'>
+                      {
+                        privacies.map((privacy,index)=>(
+                            <Link to={privacy.link} key={index}>{privacy.label}</Link>
+                        ))
+                      }  
                     </div>
                 </div>
             </footer>
