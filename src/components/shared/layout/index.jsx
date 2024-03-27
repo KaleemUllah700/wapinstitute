@@ -162,7 +162,7 @@ const privacies = [
                     }
                 </ul>
             </nav>
-            <section className='mx-8 bg-[red]'>
+            <section className='mx-8'>
                 {
                     children
                 }
