@@ -1,10 +1,11 @@
+import Hero from '../homepage/hero'
 import Layout from '../shared/layout'
 
 const Homepage = ()=>{
     return (
         <Layout>
             <div>
-                <h1>i am homepage</h1>
+                <Hero />
             </div>
         </Layout>
     )
