@@ -212,7 +212,7 @@ const privacies = [
                         }
                     </div>
                 </div>
-                <div className='flex justify-between md:mx-8 mx-4 md:py-4 py-2 md:text-sm text-[12px] font-semibold'>
+                <div className='flex justify-between md:mx-8 mx-4 md:py-4 md:text-sm text-[12px] font-semibold'>
                     <div>
                         <i className='fa fa-home'></i>
                         <span>Nodewap It Solutions | All Right Reserved</span>
