@@ -125,7 +125,7 @@ const privacies = [
 
     return(
         <div>
-            <header className="flex justify-between px-8 py-2 text-sm shadow">
+            <header className="flex justify-between md:mx-8 mx-4 py-2 text-sm shadow">
                 <div className="flex gap-6 sans-serif">
                     <a href="https://youtube.com"><i className="fa fa-youtube"></i></a>
                     <span>+923019415211</span>
@@ -143,9 +143,9 @@ const privacies = [
                     }
                 </div>
             </header>
-            <nav className='flex justify-between items-center px-8 py-2 shadow-md'>
+            <nav className='flex justify-between items-center md:mx-8 mx-4 py-2 shadow-md'>
                 <Logo />
-                <ul className='flex gap-8'>
+                <ul className='flex md:gap-8 gap-2'>
                     {
                         menus.map((menu, index)=>(
                             <button key={index}>
@@ -155,20 +155,20 @@ const privacies = [
                     }
                     {
                         authentications.map((authentication, index)=>(
-                            <button className='flex gap-2 items-center justify-center w-[90px] h-[40px] border bg-[#911287] font-semibold opacity-90 rounded text-[white]' key={index}>
+                            <button className='w-[90px] h-[40px] bg-[#911287] font-semibold opacity-90 rounded text-[white]' key={index}>
                                 <li><Link to={authentication.path}>{authentication.label}</Link></li>
                             </button>
                         ))
                     }
                 </ul>
             </nav>
-            <section className='mx-8'>
+            <section className='md:mx-8 mx-4'>
                 {
                     children
                 }
             </section>
             <footer>
-                <div className='grid grid-cols-4 bg-[white] mx-8 px-4'>
+                <div className='grid md:grid-cols-4 bg-[white] md:mx-8 mx-4 px-4'>
                     <div className='flex flex-col gap-4 p-4'>
                         <Logo />
                         <div className='flex items-center gap-4'>
@@ -212,7 +212,7 @@ const privacies = [
                         }
                     </div>
                 </div>
-                <div className='flex justify-between mx-8 text-sm font-semibold'>
+                <div className='flex justify-between md:mx-8 mx-4 md:py-4 py-2 md:text-sm text-[12px] font-semibold'>
                     <div>
                         <i className='fa fa-home'></i>
                         <span>Nodewap It Solutions | All Right Reserved</span>
