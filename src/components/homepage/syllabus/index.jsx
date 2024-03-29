@@ -57,7 +57,7 @@ const Syllabus = ()=>{
 
     return (
         <div>
-            <h1 className="text-4xl font-bold">Software Engineering Syllabus</h1>
+            <h1 className="md:text-4xl text-3xl font-bold">Software Engineering Syllabus</h1>
             <div className="grid md:grid-cols-2 p-4 pt-8">
                 <div className="flex flex-col gap-4 w-[99%] h-[400px] p-4 border border-md shadow-md rounded-lg">
                 <h1 className="text-2xl font-bold text-center">Semester 1</h1>
