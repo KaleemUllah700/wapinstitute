@@ -34,7 +34,7 @@ const Projects = ()=>{
                 <h1 className="text-4xl font-bold">Projects In Software Engineering Course</h1>
                 <p className="text-lg font-semibold opacity-80">For building logics in programming languages we will develop lots of Websites, Mobile apps, Desktop apps, Server programs, Video streaming engine, Network centric apps, Audio Video chat apps and much more</p>
             </div>
-            <marquee>
+            <marquee loop="infinite">
                 <div className="p-4 flex gap-8">
                     {
                         projectname.map((project, index)=>(
