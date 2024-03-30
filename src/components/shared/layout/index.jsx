@@ -19,7 +19,7 @@ const verifications = [
 const menus = [
     {
         label: 'Home',
-        path: '/home'
+        path: '/homepage'
     },
     {
         label: 'Software Engineering',
