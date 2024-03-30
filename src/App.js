@@ -7,7 +7,10 @@ const App = ()=>{
   return (
       <Router>
         <Routes>
-          <Route path="homepage" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
+          <Route path="/homepage" element={<Homepage />} />
+          <Route path="/software-engineering" element={<Homepage />} />
+          <Route path="/courses" element={<Courses />} />
         </Routes>
       </Router>
   )
