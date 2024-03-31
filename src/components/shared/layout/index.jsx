@@ -6,7 +6,7 @@ const Layout = ({children})=>{
 const verifications = [
     {
         label: 'Contact Us',
-        path: 'contact-us',
+        path: '/contact-us',
         icon: 'fa fa-address-card-o'
     },
     {
