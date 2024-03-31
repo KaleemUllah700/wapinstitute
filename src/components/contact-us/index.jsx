@@ -20,7 +20,7 @@ const ContactUs = ()=>{
     return (
         <Layout>
             <div className='flex items-center justify-center min-h-screen'>
-                    <div className='flex flex-col gap-6 md:w-[35%] w-[90%] h-[290px] bg-[#F7DDF6] rounded-md p-8'>
+                    <div className='flex flex-col gap-6 md:w-[35%] w-[90%] h-[290px] bg-[#F7DDF6] rounded-md p-8 shadow-xl'>
                         <h1>Contact Us</h1>
                         
                         {
