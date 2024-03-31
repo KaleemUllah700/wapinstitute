@@ -125,12 +125,12 @@ const privacies = [
 
     return(
         <div>
-            <header className="flex justify-between md:mx-8 mx-4 py-2 text-sm shadow">
-                <div className="flex gap-6 sans-serif">
+            <header className="grid md:grid-cols-2 flex gap-4 md:px-8 px-4 py-2 text-sm shadow">
+                <div className="flex md:justify-start justify-center gap-6 sans-serif">
                     <a href="https://youtube.com"><i className="fa fa-youtube"></i></a>
                     <span>+923019415211</span>
                 </div>
-                <div className="flex gap-6">
+                <div className="flex md:justify-end justify-center gap-6">
                     {
                         verifications.map((verification, index)=>(
                             <div>
@@ -143,7 +143,7 @@ const privacies = [
                     }
                 </div>
             </header>
-            <nav className='flex justify-between items-center md:mx-8 mx-4 py-2 shadow-md'>
+            <nav className='flex justify-between items-center md:px-8 px-4 py-2 shadow-md'>
                 <Logo />
                 <ul className='flex md:gap-8 gap-2'>
                     {
@@ -162,7 +162,7 @@ const privacies = [
                     }
                 </ul>
             </nav>
-            <section className='md:mx-8 mx-4'>
+            <section className='md:mx-8 mx-4 py-4'>
                 {
                     children
                 }
@@ -212,12 +212,12 @@ const privacies = [
                         }
                     </div>
                 </div>
-                <div className='flex justify-between md:mx-8 mx-4 md:py-4 md:text-sm text-[12px] font-semibold'>
+                <div className='grid md:grid-cols-2 md:mx-8 mx-4 md:py-4 py-2 md:text-sm text-[12px] font-semibold md:text-left text-center flex gap-2'>
                     <div>
                         <i className='fa fa-home'></i>
                         <span>Nodewap It Solutions | All Right Reserved</span>
                     </div>
-                    <div className='flex gap-4'>
+                    <div className='flex gap-4 md:justify-end justify-center'>
                       {
                         privacies.map((privacy,index)=>(
                             <Link to={privacy.link} key={index}>{privacy.label}</Link>
