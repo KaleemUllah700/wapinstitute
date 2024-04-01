@@ -7,7 +7,7 @@ const Hero = ()=>{
                 <h1 className="text-3xl font-bold">Rs.1,000 Monthly</h1>
                 <p className="md:text-md md:text-lg text-xs font-semibold opacity-90">Read Html, Css, Bootstrap, JavaScript, Angular, React, Python, NodeJs, Php, Laravel, .Net, MongoDb, Aws Cloud, C++, Java.</p>
                 <h1 className="md:text-5xl text-4xl font-bold">Advanced Diploma</h1>
-                <h1 className="md:text-5xl text-4xl font-bold text-[#3DA8E9]">In Software Engineering</h1>
+                <h1 className="md:text-5xl text-2xl font-bold text-[#3DA8E9]">In Software Engineering</h1>
            </div>
            <div className="bg-[#F9C6F3] md:p-6 p-4 md:w-[530px] w-[450px] h-[400px] rounded-md">
                 <h1 className="md:text-xl text-lg font-semibold">Apply for admission</h1>
