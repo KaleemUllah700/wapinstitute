@@ -8,6 +8,7 @@ import Login from "./components/login";
 import SignUp from "./components/signup";
 import Privacy from "./components/privacy";
 import RefundPolicy from "./components/refund-policy";
+import TermsConditions from "./components/terms-conditions";
 
 const App = ()=>{
   return (
@@ -15,7 +16,6 @@ const App = ()=>{
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/homepage" element={<Homepage />} />
-          <Route path="/software-engineering" element={<Homepage />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/verified" element={<Verification />} />
@@ -23,6 +23,7 @@ const App = ()=>{
           <Route path="/signup" element={<SignUp />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/refund-policy" element={<RefundPolicy />} />
+          <Route path="/terms" element={<TermsConditions />} />
         </Routes>
       </Router>
   )
