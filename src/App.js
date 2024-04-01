@@ -5,6 +5,7 @@ import Courses from './components/courses'
 import ContactUs from './components/contact-us'
 import Verification from './components/verification'
 import Login from "./components/login";
+import SignUp from "./components/signup";
 
 const App = ()=>{
   return (
@@ -17,6 +18,7 @@ const App = ()=>{
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/verified" element={<Verification />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
       </Router>
   )
