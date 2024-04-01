@@ -7,6 +7,7 @@ import Verification from './components/verification'
 import Login from "./components/login";
 import SignUp from "./components/signup";
 import Privacy from "./components/privacy";
+import RefundPolicy from "./components/refund-policy";
 
 const App = ()=>{
   return (
@@ -21,6 +22,7 @@ const App = ()=>{
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/refund-policy" element={<RefundPolicy />} />
         </Routes>
       </Router>
   )
