@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Layout from '../shared/layout'
 import Logo from '../shared/logo';
 
@@ -23,6 +24,10 @@ const Login = ()=>{
                         <button type="submit" className="bg-[#911287] p-[10px] rounded text-white text-sm font-semibold">Login</button>
                     </div>
                 </form>
+                <div className="flex items-center gap-4 text-md">
+                <h1 className="text-md py-4">Don`t have an account ?</h1>
+                <span><Link to="/signup" className="font-bold text-[blue]">Sign Up</Link></span>
+            </div>
                 </div>
             </div>
         </Layout>
