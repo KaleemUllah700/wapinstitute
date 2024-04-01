@@ -4,6 +4,7 @@ import Homepage from './components/homepage'
 import Courses from './components/courses'
 import ContactUs from './components/contact-us'
 import Verification from './components/verification'
+import Login from "./components/login";
 
 const App = ()=>{
   return (
@@ -15,6 +16,7 @@ const App = ()=>{
           <Route path="/courses" element={<Courses />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/verified" element={<Verification />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
   )
