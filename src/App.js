@@ -6,6 +6,7 @@ import ContactUs from './components/contact-us'
 import Verification from './components/verification'
 import Login from "./components/login";
 import SignUp from "./components/signup";
+import Privacy from "./components/privacy";
 
 const App = ()=>{
   return (
@@ -19,6 +20,7 @@ const App = ()=>{
           <Route path="/verified" element={<Verification />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </Router>
   )
