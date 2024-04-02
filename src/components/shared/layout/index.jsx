@@ -143,9 +143,9 @@ const privacies = [
                     }
                 </div>
             </header>
-            <nav className='flex justify-between items-center md:px-8 px-4 py-2 shadow-md'>
-                <Logo />
-                <ul className='flex md:gap-8 gap-2'>
+            <nav className='md:flex justify-between items-center md:px-8 px-4 py-2 shadow-md'>
+                <span className='flex justify-center mt-4'><Logo /></span>
+                <ul className='flex md:gap-8 gap-2 mt-4'>
                     {
                         menus.map((menu, index)=>(
                             <button key={index}>

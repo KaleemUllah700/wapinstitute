@@ -57,14 +57,14 @@ const Syllabus = ()=>{
 
     return (
         <div>
-            <h1 className="md:text-4xl text-3xl font-bold">Software Engineering Syllabus</h1>
-            <div className="grid md:grid-cols-2 p-4 pt-8">
+            <h1 className="md:text-4xl text-xl font-bold">Software Engineering Syllabus</h1>
+            <div className="grid md:grid-cols-2 p-4 md:pt-8 pt-4 flex gap-4">
                 <div className="flex flex-col gap-4 w-[99%] h-[400px] p-4 border border-md shadow-md rounded-lg">
-                <h1 className="text-2xl font-bold text-center">Semester 1</h1>
+                <h1 className="md:text-2xl text-xl font-bold text-center">Semester 1</h1>
                 {
                     Semester_1.map((semester, index)=>(
                     <div className="flex flex-col gap-4" key={index}>
-                        <div className="flex items-center gap-4 text-md font-semibold">
+                        <div className="flex items-center gap-4 md:text-md text-sm font-semibold">
                             <img src={semester.img} alt="s1_pic" />
                             <span>{semester.label}</span>
                         </div>
@@ -73,11 +73,11 @@ const Syllabus = ()=>{
                 }  
                 </div>
                 <div className="flex flex-col gap-4 w-[99%] h-[320px] p-4 border border-md shadow-md rounded-lg">
-                <h1 className="text-2xl font-bold text-center">Semester 2</h1>
+                <h1 className="md:text-2xl text-xl font-bold text-center">Semester 2</h1>
                     {
                     Semester_2.map((semester, index)=>(
                     <div className="flex flex-col gap-4" key={index}>
-                        <div className="flex items-center gap-4 text-md font-semibold">
+                        <div className="flex items-center gap-4 md:text-md text-sm font-semibold">
                             <img src={semester.img} alt="s2_pic" />
                             <span>{semester.label}</span>
                         </div>

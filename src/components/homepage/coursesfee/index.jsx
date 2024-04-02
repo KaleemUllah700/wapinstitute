@@ -26,10 +26,10 @@ const CoursesFee = ()=>{
     return (
         <div className="flex flex-col gap-6">
             <div className="flex flex-col gap-4 text-center">
-                <h1 className="md:text-4xl text-3xl font-bold">Software Engineering Course Fee</h1>
+                <h1 className="md:text-4xl text-xl font-bold">Software Engineering Course Fee</h1>
                 <p className="md:text-md text-sm font-semibold opacity-80">Compare features with all plans and make the right decision, if you are a beginner in coding then choose a monthly plan</p>
             </div> 
-            <div className="grid md:grid-cols-3 flex flex-col gap-4">
+            <div className="grid md:grid-cols-3 flex flex-col md:gap-4 gap-12">
                     <div className="flex flex-col items-center">
                         <img src="images/coursefee1.webp" alt="coursefee1" />
                     </div>
