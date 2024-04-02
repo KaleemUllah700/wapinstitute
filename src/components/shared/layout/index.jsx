@@ -164,7 +164,7 @@ const privacies = [
                     }
                 </ul>
             </nav>
-            <section className='md:mx-8 py-4'>
+            <section className='md:mx-8 mx-4 py-4'>
                 {
                     children
                 }
