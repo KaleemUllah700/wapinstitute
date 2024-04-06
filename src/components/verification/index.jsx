@@ -2,8 +2,8 @@ import Logo from '../shared/logo'
 
 const Verfication = ()=>{
     return (
-        <div className='flex flex-col items-center justify-center h-min-screen py-24'>
-            <div className='w-[400px] h-[280px] border border-md shadow-md'>
+        <div className='flex flex-col items-center justify-center md:h-min-screen py-24'>
+            <div className='md:w-[400px] w-[320px] h-[280px] border border-md shadow-md'>
                 <div className='shadow p-2'>
                     <Logo />
                 </div>
