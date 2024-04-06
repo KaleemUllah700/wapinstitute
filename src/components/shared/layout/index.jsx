@@ -143,9 +143,9 @@ const privacies = [
                     }
                 </div>
             </header>
-            <nav className='flex justify-between items-center md:px-8 px-4 py-2 shadow-md'>
-                <Logo />
-                <ul className='flex md:gap-8 gap-2'>
+            <nav className='md:flex justify-between items-center md:px-8 px-4 py-2 shadow-md'>
+                <span className='flex justify-center mt-4'><Logo /></span>
+                <ul className='grid grid-col-4 md:flex md:gap-8 gap-2 mt-4'>
                     {
                         menus.map((menu, index)=>(
                             <button key={index}>
@@ -155,9 +155,11 @@ const privacies = [
                     }
                     {
                         authentications.map((authentication, index)=>(
+                            <div className='flex justify-center'>
                             <button className='w-[90px] h-[40px] bg-[#911287] font-semibold opacity-90 rounded text-[white]' key={index}>
                                 <li><Link to={authentication.path}>{authentication.label}</Link></li>
                             </button>
+                            </div>
                         ))
                     }
                 </ul>
