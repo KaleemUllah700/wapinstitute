@@ -16,7 +16,6 @@ const App = ()=>{
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/homepage" element={<Homepage />} />
-          <Route path="/software-engineering" element={<Homepage />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/verified" element={<Verification />} />
@@ -27,7 +26,7 @@ const App = ()=>{
           <Route path="/terms" element={<TermsConditions />} />
         </Routes>
       </Router>
-  )
+    )
 }
 
 export default App;
