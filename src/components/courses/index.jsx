@@ -114,8 +114,8 @@ const Courses = ()=>{
     return (
         <Layout>
             <div>
-                <h1 className='md:text-4xl text-2xl font-bold text-[#F16B0E] text-center md:pt-12 pt-8'>MOST TRENDING COURSE IN IT INDUSTRY</h1>
-                <div className='grid md:grid-cols-4 py-16 md:mx-12 mx-24 flex flex-col md:gap-16 gap-8'>
+                <h1 className='md:text-4xl text-xl font-bold text-[#F16B0E] text-center md:pt-12 pt-8'>MOST TRENDING COURSE IN IT INDUSTRY</h1>
+                <div className='grid md:grid-cols-4 md:py-16 py-8 md:mx-12 mx-8 flex flex-col md:gap-16 gap-8'>
                     {
                         courses.map((course, index)=>(
                             <div className='w-[280px] h-[240px] flex flex-col gap-2 border border-lg shadow-xl pb-4' key={index}>
